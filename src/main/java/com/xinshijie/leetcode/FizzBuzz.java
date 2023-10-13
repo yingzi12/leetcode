@@ -8,15 +8,17 @@ import java.util.Map;
 
 public class FizzBuzz {
     public  int climbStairs(int n) {
+
+        if(n==1){
+            return 1;
+        }
+        if(n==2){
+            return 2;
+        }
         int[] total=new int[n+1];
         total[1]=1;
-        if(n==1){
-            return total[n];
-        }
-        total[2]=2;
-        if(n==2){
-            return total[n];
-        }
+        total[2]=1;
+
         //key是和 value是数量  表示每个数字的统计数
         Map<Integer,Integer> mapTotal=new HashMap<>();
         mapTotal.put(1,1);
