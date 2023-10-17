@@ -2,6 +2,7 @@ package com.xinshijie.leetcode;
 
 public class BestTimeBuySellStock {
     public int maxProfit(int[] prices) {
+        //看题是只能交易一次,多次是2.
         int total=0;
         int max=0;
         int min=prices[0];
