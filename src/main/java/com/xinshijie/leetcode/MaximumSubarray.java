@@ -21,6 +21,7 @@ public class MaximumSubarray {
 //        return max;
 //    }
     public int maxSubArray(int[] nums) {
+        //注意负数,至少需要计算一次.所以不能是0
         int max=nums[0];
         int total=nums[0];
         for(int i=1;i<nums.length;i++){
