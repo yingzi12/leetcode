@@ -6,6 +6,7 @@ import java.util.List;
 
 public class SingleNumber {
     public static  int[] rotate(int[] nums) {
+        //因为重复的肯定成对出现，题目1题目3一个list就可以，长度也可以固定
         List<Integer> arrSigle=new ArrayList<>();
         List<Integer> arrTwo=new ArrayList();
 
